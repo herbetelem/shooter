@@ -3,6 +3,7 @@ import math
 
 
 from game import Game
+
 pygame.init()
 
 
@@ -24,6 +25,7 @@ banner_rect.y = 100
 
 # import charger notre bouton pour lancer la partie
 play_button = pygame.image.load('assets/button.png')
+# resize mon image
 play_button = pygame.transform.scale(play_button, (400, 150))
 play_button_rect = play_button.get_rect()
 play_button_rect.x = 320
@@ -35,7 +37,6 @@ running = True
 
 # boucle tant que running est vrai
 while running:
-
     # appliquer le background
     screen.blit(background, (0,0))
 

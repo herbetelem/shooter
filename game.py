@@ -65,7 +65,6 @@ class Game:
             self.all_monstre = []
         else:
             self.score -= 1
-        print(self.score)
 
     def check_collision(self, sprite, group):
         return pygame.sprite.spritecollide(sprite, group, False, pygame.sprite.collide_mask)
